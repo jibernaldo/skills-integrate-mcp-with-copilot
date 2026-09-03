@@ -47,4 +47,4 @@ The application uses a simple data model with meaningful identifiers:
    - Name
    - Grade level
 
-All data is stored in memory, which means data will be reset when the server restarts.
+All activity and registration data is stored in a JSON file at `data/activities.json`, so it persists across server restarts. The app loads this file on startup and rewrites it whenever a student signs up or unregisters.
